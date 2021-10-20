@@ -13,9 +13,10 @@ body {
 header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   margin: 3rem;
-  border-radius: 10px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
   padding: 1rem;
-  background-color: #1b995e;
+  background-color: red;
   color: white;
   text-align: center;
 }
@@ -23,9 +24,11 @@ header {
 #assignment {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   margin: 3rem;
-  border-radius: 10px;
   padding: 1rem;
   text-align: center;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  background-image: linear-gradient(red , white 50%);
 }
 
 #assignment h2 {
@@ -38,24 +41,32 @@ header {
 p {
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: #8ddba4;
+  background-color: none;
   padding: 0.5rem;
   color: #1f1f1f;
-  border-radius: 25px;
+  height:50px;
+  border:1px solid red;
 }
 
 #assignment input {
   font: inherit;
-  border: 1px solid #ccc;
+  outline: none;
+         padding: 10px;
+         border: 2px solid darkgreen;
+         border-radius: 5px;
+         width:100%;
+  text-align: center;
 }
 
 #assignment input:focus {
   outline: none;
-  border-color: #1b995e;
+  border-color: red;
   background-color: #d7fdeb;
 }
 
 #assignment button {
+  height:30px;
+  width:100%;
   font: inherit;
   cursor: pointer;
   border: 1px solid #ff0077;
@@ -75,11 +86,13 @@ p {
 .user1 {
   background-color: blue;
   color: white;
+  background-image: linear-gradient(green,black);
 }
 
 .user2 {
   background-color: purple;
   color: white;
+  background-image: linear-gradient(blue,black);
 }
 
 .hidden {
@@ -89,3 +102,5 @@ p {
 .visible {
   display: block;
 }
+
+
