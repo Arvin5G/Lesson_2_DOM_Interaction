@@ -2,32 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Vue Basics</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/vue@next" defer></script>
+    
     <script src="app.js" defer></script>
   </head>
   <body>
-    <section id="assignment">
+    <section id="bitz">
       <!-- 1) Output your name -->
-      <h2>YOUR NAME</h2>
+      <h2>{{message}}</h2>
       <!-- 2) Output your age -->
-      <p>YOUR AGE</p>
+      <p>YOUR AGE: 23</p>
       <!-- 3) Output your age + 5 -->
-      <p>YOUR AGE in 5 years</p>
+      <p>YOUR AGE in 5 years: 28</p>
       <!-- 4) Output a random number (0 to 1) -->
-      <p>Favorite Number: RANDOM NUMBER BETWEEN 0 AND 1</p>
+      <p>Favorite Number: 1</p>
       <div>
         <!-- 5) Display some image you found via Google -->
-        <img src="SOME IMAGE URL" />
+        <img src="https://am21.mediaite.com/tms/cnt/uploads/2021/10/Squid-Game.jpg"
+        style="object-fit:cover; width:100%; height:300px; border: solid 3px green; border-radius:5px;"
+        />
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input type="text" />
+      <input type="text" v-on:input="message=$event.target.value" value="Arvin Gardon">
     </section>
   </body>
 </html>
